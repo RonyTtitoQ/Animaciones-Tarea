@@ -3,15 +3,64 @@
   <head>
     <style>
       h1{
-        
+        font-family: "century gothic";
+        color: rgba(100,230,42,0);
+        text-align: center;
+
+        animation-name: titulo;
+        animation-duration: 3s;
+        animation-interation-count: 1;
+        animation-fill-mode: forwards;
       }
+      @keyframes titulo{
+        from{
+          color: rgba(250,0,0,0);
+        }
+        to{
+          color: rgba(250,250,0,0);
+        }
+      }
+      p1{
+        text-align: center;
+        font-family: "century gothic";
+        font-weight: bold;
+        animation-name: puesto;
+        animation-duration: 3s;
+        animation-interation-count: 1;
+        animation-fill-mode: backwards;
+        animation-delay: 3s;
+        }
+      @keyframes puesto {
+        from{
+          color: rgba(250,250,0,0);
+        }
+        to{
+          color: rgba(250,250,0,0);
+        }
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        opacity: 0;
+        animation: imagen 3s 6s 1 forwards;
+        }
+      @keyframes imagen{
+          from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
+        }
     </style>
   </head>
   <body>
     <h1>SAMUEL HARRIS ALTMAN</h1>
-    <p>Director ejecutivo de OpenAI</p>
-    <img src="img/sam altman.png">
-    <p1>
+    <p1>Director ejecutivo de OpenAI</p1>
+    <img src="img/sam altman.jpg">
+    <p2>
      DESCRIPCIÓN <br>
      Samuel Harris Altman (Chicago, Illinois; 22 de abril de 1985), 
      conocido como Sam Altman, es un empresario, inversionista, 
@@ -19,15 +68,15 @@
      de OpenAI y expresidente de Y Combinator, y se le considera
      una de las figuras principales en el desarrollo de la inteligencia
      artificial.
-    </p1>
-    <p2>
-      CARRERA
+    </p2>
+    <p3>
+      CARRERA <br>
       En 2005, a los diecinueve años,[11] Altman cofundó y se convirtió 
       en director ejecutivo de Loopt,[12] una aplicación móvil de redes 
       sociales basada en la ubicación. Después de recaudar más de $30 
       millones en capital de riesgo, Loopt se cerró en 2012 después de 
       no poder obtener tracción. Fue adquirida por Green Dot Corporation
       por $43.4 millones.
-    </p2>
+    </p3>
   </body>
 </html>
